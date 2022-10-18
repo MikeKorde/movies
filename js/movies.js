@@ -1,24 +1,13 @@
 welcome();
 
 function welcome(){
-    html=`
-    <div class="container" >
-    <h1 class="text-center mt-5 fs-1 text-white ;">Welcome to the Open Movies Database<h1>
-            <div class="row">   
-           
-            </div>
-            <div class="row ">
-                <button type="button" class="btn btn-outline-light d-grid gap-1 col-1 mx-auto mt-5" id="strbtn">Enter</button>
-            </div>
-            </div>`;
-    
-    document.querySelector('#welcome').innerHTML = html;
     document.querySelector('#strbtn').addEventListener('click',function(){
-
+        html=``;
+        document.querySelector('#welcome').innerHTML = html;
         html=`
         <nav class="navbar navbar-dark bg-dark" id="nav">
             <div class="container-fluid ">
-              <a class="navbar-brand border border-white" class=omdb" onclick="home('film',1)">Open Movie DataBase</a>
+              <a class="navbar-brand border border-white" class="omdb" onclick="home('film',1)">Open Movie DataBase</a>
               <div class="d-flex">
                 <h5 class="text-white-50 mt-2 px-2 ">Search</h5>
                 <input id="search-input" class="form-control me-2" type="search" placeholder="e.g. james bond" aria-label="Search">

@@ -1,35 +1,9 @@
 
 body{
-    background:url('file:///C:/Users/Usuario/Desktop/practicar-dev/movies/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
-    background-size: cover;
-    
-
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-  }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-
-    
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100%;
 }
 
 .card-img-top{
@@ -59,3 +33,25 @@ body{
     100% {opacity:1;}
 
 }
+#strbtn{
+  background:    #ff0000;
+  background:    linear-gradient(#ff0000, #050505);
+  border-radius: 17px;
+  padding:       10px 49px;
+  color:         #ffffff;
+  font:          normal normal 19px/1 "Ubuntu", sans-serif;
+  text-align:    center;
+  text-shadow:   1px 1px #000000;
+  margin-top:200px;
+  
+}
+.cont{
+  text-align: center;
+  margin-top:5%;
+  
+}
+.titl{
+  font:normal normal 50px/1 "Ubuntu", sans-serif;
+  color: #bb3232;
+}
+
