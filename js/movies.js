@@ -5,6 +5,7 @@ function welcome(){
         html=``;
         document.querySelector('#welcome').innerHTML = html;
         html=`
+        <button onclick="topFunction()" id="Btn" title="Go to top">&uarr;</button>
         <nav class="navbar navbar-dark" id="nav">
             <div class="container-fluid ">
               <a class="navbar-brand" id="omdb" onclick="home('film',1)"><p>Open Movies DataBase</p></a>
@@ -30,7 +31,6 @@ function welcome(){
                             <li class="list-group-item">A second item</li>
                             <li class="list-group-item">A third item</li>
                         </ul>
-                        
                         
                     </div>
                 </div>
@@ -208,4 +208,25 @@ function back(q,p){
         }
 
    });
+}
+
+// Get the button:
+let mybutton = document.getElementById("Btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.documentElement.style.scrollBehavior = "smooth";
 }
