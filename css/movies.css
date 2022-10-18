@@ -55,3 +55,11 @@ body{
   color: #bb3232;
 }
 
+#omdb{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#nav{
+  background: linear-gradient(#e66465, #000000);;
+}

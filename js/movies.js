@@ -5,9 +5,9 @@ function welcome(){
         html=``;
         document.querySelector('#welcome').innerHTML = html;
         html=`
-        <nav class="navbar navbar-dark bg-dark" id="nav">
+        <nav class="navbar navbar-dark" id="nav">
             <div class="container-fluid ">
-              <a class="navbar-brand border border-white" class="omdb" onclick="home('film',1)">Open Movie DataBase</a>
+              <a class="navbar-brand" id="omdb" onclick="home('film',1)"><p>Open Movies DataBase</p></a>
               <div class="d-flex">
                 <h5 class="text-white-50 mt-2 px-2 ">Search</h5>
                 <input id="search-input" class="form-control me-2" type="search" placeholder="e.g. james bond" aria-label="Search">
